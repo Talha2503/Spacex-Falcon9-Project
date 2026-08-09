@@ -1,4 +1,4 @@
-# 🚀 SpaceX Falcon 9 Landing Prediction — Data Science Capstone
+# SpaceX Falcon 9 Landing Prediction — Data Science Capstone
 
 ## Overview
 
@@ -62,10 +62,11 @@ If we can determine whether the first stage will land, we can determine the cost
 
 ## Key Findings
 
-*(Fill in with your actual numbers once you've reviewed your notebook outputs)*
-- Overall landing success rate: **__%**
-- Best-performing model: **__** with test accuracy of **__%**
-- Launch success strongly correlated with: **__** (e.g. orbit type, flight number, payload mass)
+- Overall landing success rate: **66.7%**
+- KSC LC-39A had the highest per-site success rate at **77.3%** (22 launches, 17 successful), followed by VAFB SLC-4E at **76.9%** (13 launches, 10 successful) and CCAFS SLC-40 at **60.0%** (55 launches, 33 successful)
+- Best-performing models: **Logistic Regression, SVM, and KNN** all tied for the highest test accuracy at **83.3%** — Logistic Regression is the simplest of the three and a strong default choice given the tie
+- Decision Tree underperformed relative to the others on the held-out test set (**72.2%** test accuracy), despite a comparable cross-validation score (0.834), suggesting it overfit slightly more to the training data
+- CCAFS SLC-40 handled the largest launch volume (55 launches) but had the lowest success rate of the three sites, worth flagging as a point of interest in your write-up
 
 ## Tools & Technologies
 
@@ -79,8 +80,4 @@ If we can determine whether the first stage will land, we can determine the cost
 4. To launch the interactive dashboard: `cd dashboard && python spacex_dash_app.py`, then open `http://127.0.0.1:8050` in your browser
 
 ## Author
-
 Muhammad Talha — built as the final capstone project for the IBM Applied Data Science Capstone / Data Science Professional Certificate.
-## Author
-
-*(Your name)* — built as the final capstone project for the IBM Applied Data Science Capstone / Data Science Professional Certificate.
